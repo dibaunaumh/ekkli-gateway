@@ -1,9 +1,9 @@
 from google.appengine.api import xmpp
-from django.views.decorators.csrf import csrf_exempt
+#from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from google.appengine.api.mail import send_mail
 
-@csrf_exempt
+#@csrf_exempt
 def send_notification_message(request):
     if request.POST:
         # perform GET
